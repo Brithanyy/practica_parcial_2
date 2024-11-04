@@ -1,0 +1,31 @@
+<fieldset>
+    <h1>Agregar un nuevo personaje</h1>
+    <form [formGroup]="formulario" (ngSubmit)="addPersonaje()">
+        <label>ID: </label>
+        <input type="text" formControlName = "id">
+        <br>
+        <small [hidden]="id?.valid || id?.pristine">Campo obligatorio</small>
+        <br>
+        <label>Nombre: </label>
+        <input type="text" formControlName = "nombre">
+        <br>
+        <small [hidden]="nombre?.valid || nombre?.pristine">Campo obligatorio</small>
+        <br>
+        <label>Alias: </label>
+        <input type="text" formControlName = "alias">
+        <br>
+        <small [hidden]="alias?.valid || alias?.pristine">Campo obligatorio</small>
+        <br>
+        <label>Poder: </label>
+        <input type="text" formControlName = "poder">
+        <br>
+        <small [hidden]="poder?.valid || poder?.pristine">Campo obligatorio</small>
+        <br>
+        <label>Descripcion: </label>
+        <input type="text" formControlName = "descripcion">
+        <br>
+        <small [hidden]="descripcion?.valid || descripcion?.pristine">Campo obligatorio</small>
+        <br>
+        <button [disabled]="this.formulario.invalid">Agregar Personaje</button>
+    </form>
+</fieldset>

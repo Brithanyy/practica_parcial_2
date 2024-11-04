@@ -1,0 +1,38 @@
+<fieldset class="carta">
+    <h2>Personaje {{this.personaje.id}}</h2>
+    <p>Nombre: {{this.personaje.nombre}}</p>
+    <p>Alias: {{this.personaje.alias}}</p>
+    <p>Poder: {{this.personaje.poder}}</p>
+    <p>Decripcion: {{this.personaje.descripcion}}</p>
+    <button (click)="editar()">Editar Personaje</button>
+</fieldset>
+
+@if (form_active) {
+    <fieldset class="formulario">
+        <h1>Modificar Personaje</h1>
+        <form [formGroup]="formulario" (ngSubmit)="modificarPersonajeDB()">
+            <br>
+            <label>Nombre: </label>
+            <input type="text" formControlName = "nombre">
+            <br>
+            <small [hidden]="nombre?.valid || nombre?.pristine">Campo obligatorio</small>
+            <br>
+            <label>Alias: </label>
+            <input type="text" formControlName = "alias">
+            <br>
+            <small [hidden]="alias?.valid || alias?.pristine">Campo obligatorio</small>
+            <br>
+            <label>Poder: </label>
+            <input type="text" formControlName = "poder">
+            <br>
+            <small [hidden]="poder?.valid || poder?.pristine">Campo obligatorio</small>
+            <br>
+            <label>Descripcion: </label>
+            <input type="text" formControlName = "descripcion">
+            <br>
+            <small [hidden]="descripcion?.valid || descripcion?.pristine">Campo obligatorio</small>
+            <br>
+            <button [disabled]="this.formulario.invalid">Modificar Personaje</button>
+        </form>
+    </fieldset>
+}

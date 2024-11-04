@@ -1,0 +1,12 @@
+nav {
+    padding: 1rem;
+    background-color: darkblue;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    margin: 3rem;
+}

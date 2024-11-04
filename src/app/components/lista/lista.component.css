@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+fieldset {
+    width: 10rem;
+    height: auto;
+    border: 5px solid darkblue;
+    display: inline-block;
+    margin: 2rem;
+}
+button {
+    margin-left: 5px;
+}

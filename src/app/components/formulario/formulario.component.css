@@ -1,0 +1,14 @@
+fieldset {
+    height: auto;
+    width: 15rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 12rem;
+    border: 5px solid blue;
+}
+
+small {
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+}

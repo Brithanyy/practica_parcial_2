@@ -1,0 +1,11 @@
+{
+  "personajes": [
+    {
+      "nombre": "Rocio",
+      "alias": "MODIFICADO",
+      "poder": "Programar",
+      "descripcion": "Programar muy rapido",
+      "id": "1"
+    }
+  ]
+}

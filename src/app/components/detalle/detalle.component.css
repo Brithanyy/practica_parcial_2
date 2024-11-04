@@ -1,0 +1,24 @@
+.carta {
+    margin: 0 auto;
+    width: 15rem;
+    height: auto;
+    margin-top: 10rem;
+    border: 5px solid blue;
+    text-align: center;
+}
+
+.formulario {
+    height: auto;
+    width: 15rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+    border: 5px solid blue;
+}
+
+small {
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+}

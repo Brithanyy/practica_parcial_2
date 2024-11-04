@@ -1,0 +1,9 @@
+<h1>Lista de Personajes</h1>
+
+<fieldset *ngFor="let personaje of personajes">
+    <h3>Personaje {{personaje.id}}</h3>
+    <p>Nombre {{personaje.nombre}}</p>
+    <br>
+    <button (click)="detalle(personaje.id)">Detalle</button>
+    <button (click)="deletePersonaje(personaje.id)">Eliminar</button>
+</fieldset>
